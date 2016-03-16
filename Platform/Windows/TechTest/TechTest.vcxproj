@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B670A2ED-7FEC-4E26-9D86-54EC7DE115B8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TechTest</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\Frameworks\GLEXT;$(ProjectDir)\..\..\..\Libraries\zlib;$(ProjectDir)\..\Frameworks\SDL\include;$(ProjectDir)\..\..\..\Libraries;$(ProjectDir)\..\..\..\Sources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\..\Frameworks\GLEXT;$(ProjectDir)\..\Frameworks\SDL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;;SDL2.lib;SDL2main.lib;OpenGL32.lib;glew32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Libraries\libpng\png.h" />
+    <ClInclude Include="..\..\..\Libraries\libpng\pngconf.h" />
+    <ClInclude Include="..\..\..\Libraries\libpng\pngdebug.h" />
+    <ClInclude Include="..\..\..\Libraries\libpng\pnginfo.h" />
+    <ClInclude Include="..\..\..\Libraries\libpng\pnglibconf.h" />
+    <ClInclude Include="..\..\..\Libraries\libpng\pngpriv.h" />
+    <ClInclude Include="..\..\..\Libraries\libpng\pngstruct.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\crc32.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\deflate.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\gzguts.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\inffast.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\inffixed.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\inflate.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\inftrees.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\trees.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\zconf.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\zlib.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\zutil.h" />
+    <ClInclude Include="..\..\..\Sources\AI\TNode.h" />
+    <ClInclude Include="..\..\..\Sources\AI\TPathfinder.h" />
+    <ClInclude Include="..\..\..\Sources\Core\TTApplication.h" />
+    <ClInclude Include="..\..\..\Sources\Core\TTConstants.h" />
+    <ClInclude Include="..\..\..\Sources\Core\TTEntity.h" />
+    <ClInclude Include="..\..\..\Sources\Core\TTFont.h" />
+    <ClInclude Include="..\..\..\Sources\Core\TTSprite.h" />
+    <ClInclude Include="..\..\..\Sources\Core\TTState.h" />
+    <ClInclude Include="..\..\..\Sources\Core\TTTexture.h" />
+    <ClInclude Include="..\..\..\Sources\Core\TTTextureLibrary.h" />
+    <ClInclude Include="..\..\..\Sources\Entities\Cell.h" />
+    <ClInclude Include="..\..\..\Sources\Entities\Enemy.h" />
+    <ClInclude Include="..\..\..\Sources\Entities\Map.h" />
+    <ClInclude Include="..\..\..\Sources\Entities\Player.h" />
+    <ClInclude Include="..\..\..\Sources\Entities\Trail.h" />
+    <ClInclude Include="..\..\..\Sources\GameConstants.h" />
+    <ClInclude Include="..\..\..\Sources\Managers\EnemiesManager.h" />
+    <ClInclude Include="..\..\..\Sources\States\PlayState.h" />
+    <ClInclude Include="..\..\..\Sources\UI\UIManager.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TMap.h" />
+    <ClInclude Include="TNode.h" />
+    <ClInclude Include="TPathfinder.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Libraries\libpng\png.c" />
+    <ClCompile Include="..\..\..\Libraries\libpng\pngerror.c" />
+    <ClCompile Include="..\..\..\Libraries\libpng\pngget.c" />
+    <ClCompile Include="..\..\..\Libraries\libpng\pngmem.c" />
+    <ClCompile Include="..\..\..\Libraries\libpng\pngpread.c" />
+    <ClCompile Include="..\..\..\Libraries\libpng\pngread.c" />
+    <ClCompile Include="..\..\..\Libraries\libpng\pngrio.c" />
+    <ClCompile Include="..\..\..\Libraries\libpng\pngrtran.c" />
+    <ClCompile Include="..\..\..\Libraries\libpng\pngrutil.c" />
+    <ClCompile Include="..\..\..\Libraries\libpng\pngset.c" />
+    <ClCompile Include="..\..\..\Libraries\libpng\pngtrans.c" />
+    <ClCompile Include="..\..\..\Libraries\libpng\pngwio.c" />
+    <ClCompile Include="..\..\..\Libraries\libpng\pngwrite.c" />
+    <ClCompile Include="..\..\..\Libraries\libpng\pngwtran.c" />
+    <ClCompile Include="..\..\..\Libraries\libpng\pngwutil.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\adler32.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\compress.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\crc32.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\deflate.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\gzclose.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\gzlib.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\gzread.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\gzwrite.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\infback.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\inffast.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\inflate.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\inftrees.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\trees.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\uncompr.c" />
+    <ClCompile Include="..\..\..\Libraries\zlib\zutil.c" />
+    <ClCompile Include="..\..\..\Sources\AI\TNode.cpp" />
+    <ClCompile Include="..\..\..\Sources\AI\TPathfinder.cpp" />
+    <ClCompile Include="..\..\..\Sources\Core\TTApplication.cpp" />
+    <ClCompile Include="..\..\..\Sources\Core\TTEntity.cpp" />
+    <ClCompile Include="..\..\..\Sources\Core\TTFont.cpp" />
+    <ClCompile Include="..\..\..\Sources\Core\TTSprite.cpp" />
+    <ClCompile Include="..\..\..\Sources\Core\TTState.cpp" />
+    <ClCompile Include="..\..\..\Sources\Core\TTTexture.cpp" />
+    <ClCompile Include="..\..\..\Sources\Core\TTTextureLibrary.cpp" />
+    <ClCompile Include="..\..\..\Sources\Entities\Cell.cpp" />
+    <ClCompile Include="..\..\..\Sources\Entities\Enemy.cpp" />
+    <ClCompile Include="..\..\..\Sources\Entities\Map.cpp" />
+    <ClCompile Include="..\..\..\Sources\Entities\Player.cpp" />
+    <ClCompile Include="..\..\..\Sources\Entities\Trail.cpp" />
+    <ClCompile Include="..\..\..\Sources\main.cpp" />
+    <ClCompile Include="..\..\..\Sources\Managers\EnemiesManager.cpp" />
+    <ClCompile Include="..\..\..\Sources\States\PlayState.cpp" />
+    <ClCompile Include="..\..\..\Sources\UI\UIManager.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

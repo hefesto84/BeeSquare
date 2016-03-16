@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{1a6f831a-e6fc-4591-8457-81aa7ff74ad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities">
+      <UniqueIdentifier>{69067899-70a0-4618-934f-8228c8ec4a5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\States">
+      <UniqueIdentifier>{5e28c547-a6ea-48ef-a9c3-8d13f7e41721}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries">
+      <UniqueIdentifier>{002dea0a-5a35-40c0-8617-989ab8b06247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\libpng">
+      <UniqueIdentifier>{75665e8e-cc8b-4e1d-9fd4-35cb7016ae93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\zlib">
+      <UniqueIdentifier>{d5adaefc-aade-46bf-95eb-066eec1a9b52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers">
+      <UniqueIdentifier>{fc37f762-581f-4b49-bf01-b646b6e59b9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{52701326-a3e9-450c-9c79-7f49309a4f00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IA">
+      <UniqueIdentifier>{78fa7683-a08e-4424-a704-3be70812cd60}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\Core\TTApplication.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\Core\TTConstants.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\Core\TTEntity.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\Core\TTFont.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\Core\TTSprite.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\Core\TTState.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\Core\TTTexture.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\Core\TTTextureLibrary.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\Entities\Enemy.h">
+      <Filter>Source Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\Entities\Player.h">
+      <Filter>Source Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\States\PlayState.h">
+      <Filter>Source Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\libpng\png.h">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\libpng\pngconf.h">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\libpng\pngdebug.h">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\libpng\pnginfo.h">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\libpng\pnglibconf.h">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\libpng\pngpriv.h">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\libpng\pngstruct.h">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\zlib\crc32.h">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\zlib\deflate.h">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\zlib\inffast.h">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\zlib\inffixed.h">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\zlib\inflate.h">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\zlib\inftrees.h">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\zlib\trees.h">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\zlib\zconf.h">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\zlib\zlib.h">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\zlib\zutil.h">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\zlib\gzguts.h">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\Managers\EnemiesManager.h">
+      <Filter>Source Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\UI\UIManager.h">
+      <Filter>Source Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\GameConstants.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\Entities\Cell.h">
+      <Filter>Source Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\Entities\Trail.h">
+      <Filter>Source Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="TNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TPathfinder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\AI\TNode.h">
+      <Filter>Source Files\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\AI\TPathfinder.h">
+      <Filter>Source Files\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="TMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sources\Entities\Map.h">
+      <Filter>Source Files\Entities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\Core\TTApplication.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\Core\TTEntity.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\Core\TTFont.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\Core\TTSprite.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\Core\TTState.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\Core\TTTexture.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\Core\TTTextureLibrary.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\Entities\Enemy.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\Entities\Player.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\States\PlayState.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\png.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngerror.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngget.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngmem.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngpread.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngread.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngrio.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngrtran.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngrutil.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngset.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngtrans.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngwio.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngwrite.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngwtran.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngwutil.c">
+      <Filter>Source Files\Libraries\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\adler32.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\compress.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\crc32.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\deflate.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\gzclose.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\gzlib.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\gzread.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\gzwrite.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\infback.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\inffast.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\inflate.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\inftrees.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\trees.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\uncompr.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\zutil.c">
+      <Filter>Source Files\Libraries\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\Managers\EnemiesManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\UI\UIManager.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\Entities\Cell.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\Entities\Trail.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\AI\TNode.cpp">
+      <Filter>Source Files\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\AI\TPathfinder.cpp">
+      <Filter>Source Files\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sources\Entities\Map.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
